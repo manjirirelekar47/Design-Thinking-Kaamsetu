@@ -5,10 +5,10 @@
   "description": "KaamSetu - Digital Labour Platform for construction & daily-wage workers with verified credentials and escrow-secured wages",
   "main": "kaamsetu/server/index.js",
   "scripts": {
-    "build": "npm --prefix kaamsetu/client install && npm --prefix kaamsetu/client run build && npm --prefix kaamsetu/server install",
+    "build": "cd kaamsetu/client && npm install && npm run build && cd ../server && npm install",
     "start": "node kaamsetu/server/index.js",
     "dev:server": "node kaamsetu/server/index.js",
-    "dev:client": "npm --prefix kaamsetu/client run dev"
+    "dev:client": "cd kaamsetu/client && npm run dev"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const SECRET = process.env.JWT_SECRET || 'dev-secret-change-me';
 const PORT = process.env.PORT || 5000;
@@ -864,6 +866,19 @@ app.post('/api/reset', (req, res) => {
 });
 
 app.get('/api/health', (req, res) => res.json({ ok: true, version: 3 }));
+
+// Serve production static assets from client/dist if present
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const distPath = path.join(__dirname, '../client/dist');
+
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
 
 // Custom Error Middleware
 app.use((err, req, res, next) => {

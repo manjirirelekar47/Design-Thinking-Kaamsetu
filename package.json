@@ -1,0 +1,16 @@
+{
+  "name": "kaamsetu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KaamSetu - Digital Labour Platform for construction & daily-wage workers with verified credentials and escrow-secured wages",
+  "main": "kaamsetu/server/index.js",
+  "scripts": {
+    "build": "npm --prefix kaamsetu/client install && npm --prefix kaamsetu/client run build && npm --prefix kaamsetu/server install",
+    "start": "node kaamsetu/server/index.js",
+    "dev:server": "node kaamsetu/server/index.js",
+    "dev:client": "npm --prefix kaamsetu/client run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

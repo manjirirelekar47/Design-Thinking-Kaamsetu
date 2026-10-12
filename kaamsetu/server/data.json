@@ -1,0 +1,313 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Ramesh Ahirwar",
+      "phone": "9000000001",
+      "role": "worker",
+      "skill": "Helper",
+      "days": 188,
+      "rating": 4.64,
+      "onTimePct": 96,
+      "consent": true,
+      "available": true,
+      "area": "Baner, Pune",
+      "baseEarnings": 130900,
+      "totalEarned": 800
+    },
+    {
+      "id": "u2",
+      "name": "Patil Builders",
+      "phone": "9000000002",
+      "role": "contractor",
+      "verified": true,
+      "rating": 4.28,
+      "onTimePct": 92,
+      "escrowBalance": 24200
+    },
+    {
+      "id": "u3",
+      "name": "Sunil (Mukkadam)",
+      "phone": "9000000003",
+      "role": "mukkadam"
+    },
+    {
+      "id": "u4",
+      "name": "Shree Infra",
+      "phone": "9000000004",
+      "role": "contractor",
+      "verified": false,
+      "rating": 3.9,
+      "onTimePct": 74,
+      "escrowBalance": 5000
+    },
+    {
+      "id": "ufqvz4p",
+      "name": "Kiran Pawar",
+      "phone": "9000000088",
+      "role": "worker",
+      "skill": "Helper",
+      "area": "Wakad",
+      "language": "hi",
+      "days": 0,
+      "rating": 5,
+      "onTimePct": 100,
+      "consent": true,
+      "available": true,
+      "baseEarnings": 0
+    },
+    {
+      "id": "uuk2ih0",
+      "name": "Ramesh Ahirwar",
+      "phone": "9000000006",
+      "role": "worker",
+      "skill": "Plumber",
+      "area": "Pimpri-Chinchwad",
+      "language": "en",
+      "days": 0,
+      "rating": 5,
+      "onTimePct": 100,
+      "consent": true,
+      "available": true,
+      "baseEarnings": 0
+    }
+  ],
+  "jobs": [
+    {
+      "id": "j1",
+      "contractorId": "u2",
+      "title": "Mason crew",
+      "site": "Baner site",
+      "wage": 700,
+      "workersNeeded": 4,
+      "duration": "2 days",
+      "otp": "4821",
+      "escrowFunded": true
+    },
+    {
+      "id": "j2",
+      "contractorId": "u4",
+      "title": "Plastering helper",
+      "site": "Wakad site",
+      "wage": 550,
+      "workersNeeded": 2,
+      "duration": "1 day",
+      "otp": "7310",
+      "escrowFunded": false
+    },
+    {
+      "id": "j8031ah",
+      "contractorId": "u2",
+      "title": "Senior Mason Lead",
+      "site": "Baner Tech Park",
+      "wage": 800,
+      "duration": "1 day",
+      "workersNeeded": 1,
+      "otp": "1790",
+      "escrowFunded": true,
+      "createdAt": 1791808105793
+    }
+  ],
+  "bookings": [
+    {
+      "id": "buyb663",
+      "jobId": "j8031ah",
+      "workerId": "u1",
+      "status": "paid",
+      "funded": true,
+      "payMethod": "UPI",
+      "claim": false,
+      "compensation": 0,
+      "rating": 5,
+      "createdAt": 1791808105824,
+      "wageDueAt": 1791836905824,
+      "checkInAt": 1791808105874,
+      "gps": {
+        "lat": 18.559,
+        "lng": 73.7868
+      },
+      "checkOutAt": 1791808105901,
+      "paidAt": 1791808105916,
+      "comment": "Punctual and very neat finish.",
+      "contractorRating": 5,
+      "contractorComment": "Immediate escrow release, great contractor."
+    },
+    {
+      "id": "b6fvozt",
+      "jobId": "j1",
+      "workerId": "u1",
+      "status": "checked_in",
+      "funded": true,
+      "payMethod": "UPI",
+      "claim": false,
+      "compensation": 0,
+      "rating": null,
+      "createdAt": 1791808537317,
+      "wageDueAt": 1791837337317,
+      "checkInAt": 1791808550406,
+      "gps": {
+        "lat": 18.559,
+        "lng": 73.7868,
+        "site": "Baner"
+      }
+    }
+  ],
+  "notifs": [
+    {
+      "id": "n1eu24v",
+      "to": "workers",
+      "text": "New job: Senior Mason Lead at Baner Tech Park, ₹800/day",
+      "jobId": "j8031ah",
+      "ch": "WhatsApp",
+      "at": 1791808105793
+    },
+    {
+      "id": "nskdp1a",
+      "to": "u2",
+      "text": "Ramesh Ahirwar accepted Senior Mason Lead",
+      "jobId": null,
+      "ch": "SMS",
+      "at": 1791808105824
+    },
+    {
+      "id": "ny4rbku",
+      "to": "u2",
+      "text": "Ramesh Ahirwar checked in at Baner Tech Park",
+      "jobId": null,
+      "ch": "SMS",
+      "at": 1791808105874
+    },
+    {
+      "id": "natwbvy",
+      "to": "u1",
+      "text": "₹800 paid via UPI for Senior Mason Lead",
+      "jobId": null,
+      "ch": "WhatsApp",
+      "at": 1791808105916
+    },
+    {
+      "id": "ni0zdhh",
+      "to": "9822011223",
+      "text": "Wage split receipt: ₹1640 credited for Helper (5 shifts)",
+      "jobId": null,
+      "ch": "WhatsApp",
+      "at": 1791808106009
+    },
+    {
+      "id": "n8i6sr4",
+      "to": "9822011225",
+      "text": "Wage split receipt: ₹2559 credited for Mason (6 shifts)",
+      "jobId": null,
+      "ch": "WhatsApp",
+      "at": 1791808106009
+    },
+    {
+      "id": "nqoarwc",
+      "to": "contractors",
+      "text": "🚨 SOS EMERGENCY from Ramesh Ahirwar (9000000001)!",
+      "jobId": null,
+      "ch": "SMS",
+      "at": 1791808106022
+    },
+    {
+      "id": "n5z6cw8",
+      "to": "u4",
+      "text": "Crew of 3 workers booked for Plastering helper by Sunil (Mukkadam)",
+      "jobId": null,
+      "ch": "SMS",
+      "at": 1791808480022
+    },
+    {
+      "id": "n4nin41",
+      "to": "9822011223",
+      "text": "Wage split receipt: ₹786 credited for Helper (5 shifts)",
+      "jobId": null,
+      "ch": "WhatsApp",
+      "at": 1791808486377
+    },
+    {
+      "id": "n2ywe2y",
+      "to": "9822011225",
+      "text": "Wage split receipt: ₹1226 credited for Mason (6 shifts)",
+      "jobId": null,
+      "ch": "WhatsApp",
+      "at": 1791808486377
+    },
+    {
+      "id": "n0y1o7f",
+      "to": "9822082527",
+      "text": "Wage split receipt: ₹786 credited for Helper (5 shifts)",
+      "jobId": null,
+      "ch": "WhatsApp",
+      "at": 1791808486377
+    },
+    {
+      "id": "nar6pn3",
+      "to": "u2",
+      "text": "Ramesh Ahirwar accepted Mason crew",
+      "jobId": null,
+      "ch": "SMS",
+      "at": 1791808537320
+    },
+    {
+      "id": "n1c81yy",
+      "to": "u2",
+      "text": "Ramesh Ahirwar checked in at Baner site",
+      "jobId": null,
+      "ch": "SMS",
+      "at": 1791808550406
+    }
+  ],
+  "crewJobs": [
+    {
+      "id": "cj6va0or",
+      "jobId": "j2",
+      "size": 3,
+      "bookedAt": 1791808480022,
+      "mukkadamId": "u3"
+    }
+  ],
+  "version": 3,
+  "crew": [
+    {
+      "id": "c1",
+      "name": "Ramesh Ahirwar",
+      "role": "Mason",
+      "days": 6,
+      "present": false,
+      "phone": "9000000001"
+    },
+    {
+      "id": "c2",
+      "name": "Sunil Shinde",
+      "role": "Helper",
+      "days": 5,
+      "present": true,
+      "phone": "9822011223"
+    },
+    {
+      "id": "c3",
+      "name": "Dilip Gaikwad",
+      "role": "Helper",
+      "days": 4,
+      "present": false,
+      "phone": "9822011224"
+    },
+    {
+      "id": "c4",
+      "name": "Kiran Jadhav",
+      "role": "Mason",
+      "days": 6,
+      "present": true,
+      "phone": "9822011225"
+    },
+    {
+      "id": "cu0c0oy",
+      "name": "dillip",
+      "role": "Helper",
+      "days": 5,
+      "present": true,
+      "phone": "9822082527"
+    }
+  ]
+}
